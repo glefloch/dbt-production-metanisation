@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: fct_monthly_revenue
+    columns:
+      - name: year
+        description: Année de production
+        constraints:
+          - type: not_null
+        tests: 
+          - not_null
+      - name: month
+        description: Mois de production
+        constraints:
+          - type: not_null
+        tests:
+          - not_null
+      - name: production_kwh
+        description: Volume de KWh produit
+        constraints:
+          - type: not_null
+        tests:
+          - not_null
+      - name: revenue
+        description: Revenue total produit
+        constraints:
+          - type: not_null
+        tests:
+          - not_null

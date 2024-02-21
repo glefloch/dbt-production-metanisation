@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_bigquery_hourly_production
+    columns:
+      - name: date
+        description: Horodatage de la donnée
+        tests:
+          - not_null
+      - name: hourly_avg
+        description: Moyenne de production horaire
+        tests:
+          - not_null

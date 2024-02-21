@@ -1,0 +1,45 @@
+version: 2
+
+sources:
+  - name: raw_bigquery
+    database: gaec-metaviewer
+    schema: production
+    tables: 
+      - name: tarif_annuel
+        tags: 
+          - reference
+          - raw-data
+        columns:
+          - name: year
+          - name: prix_kwh
+          - name: bonus_kwh
+      - name: csv-data
+        tags:
+          - raw-data
+        columns:
+          - name: timestamp_field_0
+          - name: int64_field_1
+          - name: int64_field_2
+          - name: int64_field_3
+          - name: int64_field_4
+          - name: int64_field_5
+          - name: int64_field_6
+      - name: csv-5min
+        tags:
+          - raw-data
+        columns:
+          - name: timestamp_field_0
+          - name: int64_field_1
+          - name: int64_field_2
+          - name: int64_field_3
+          - name: int64_field_4
+          - name: int64_field_5
+          - name: int64_field_6
+          - name: int64_field_7
+          - name: int64_field_8
+          - name: int64_field_9
+          - name: int64_field_10
+          - name: int64_field_11
+          - name: int64_field_12
+
+

@@ -1,0 +1,15 @@
+
+name: 'production_metanisation'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'production_metanisation'
+
+model-paths: ["models"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+clean-targets: 
+  - "target"
+  - "dbt_packages"
+
